@@ -1,6 +1,5 @@
 com\example\springbootrediscache\controllers\VisitasController.class
 com\example\springbootrediscache\SpringBootRedisCacheApplication.class
-com\example\springbootrediscache\config\SwaggerConfig.class
 com\example\springbootrediscache\repository\UserRepository.class
 com\example\springbootrediscache\repository\UserRepositoryImpl.class
 com\example\springbootrediscache\models\Visitas.class

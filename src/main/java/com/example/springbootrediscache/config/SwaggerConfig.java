@@ -1,4 +1,4 @@
-package com.example.springbootrediscache.config;
+/*package com.example.springbootrediscache.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,4 +33,4 @@ public class SwaggerConfig {
 				.version("1.0")
 				.build();
     }
-}
+}*/

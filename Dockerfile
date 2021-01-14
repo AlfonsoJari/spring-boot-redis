@@ -2,13 +2,13 @@
 FROM openjdk:8-jdk-alpine
 
 # Add Maintainer Info
-LABEL maintainer="basiliohj@gmail.com"
+LABEL maintainer="alfons.jari@gmail.com"
 
 # Add a volume pointing to /tmp
 VOLUME /tmp
 
 # Make port 8080 available to the world outside this container
-EXPOSE 5045
+EXPOSE 5018
 
 # The application's jar file
 ARG JAR_FILE=target/spring-boot-redis-cache-0.0.1-SNAPSHOT.jar
@@ -20,7 +20,7 @@ ADD ${JAR_FILE} spring-boot-redis-cache-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/spring-boot-redis-cache-0.0.1-SNAPSHOT.jar"]
 
 # docker build
-# sudo docker build -t <dockerhub-user>/ng5-api .
+# sudo docker build -t redis/ng5-api .
 
 # docker run
-# sudo docker run --name <linuxuser>-api -p 8xxx:8080 <dockerhub-user>/ng5-api 
+# sudo docker run --name redis-api -p 5018:8080 redis-api
